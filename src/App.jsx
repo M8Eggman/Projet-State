@@ -8,7 +8,7 @@ import Summary from "./components/summary/Summary";
 import ThankYou from "./components/thankYou/thankYou";
 
 function App() {
-  const [etape, setEtape] = useState(4);
+  const [etape, setEtape] = useState(1);
   return (
     <>
       <SideBar etape={etape} />

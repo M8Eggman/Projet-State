@@ -15,7 +15,9 @@ function Summary(props) {
               </h4>
               <p>Change</p>
             </div>
-            <p>${}/{}</p>
+            <p>
+              ${}/{}
+            </p>
           </div>
           <div className="summaryAdd-ons">
             {}
@@ -24,10 +26,12 @@ function Summary(props) {
           </div>
         </div>
         <div className="summaryTotal">
-            <p>Total (per {})</p>
-            <p>${}/{}</p>
+          <p>Total (per {})</p>
+          <p>
+            ${}/{}
+          </p>
         </div>
-        <DivBouton etape={props.etape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} />
       </div>
     </>
   );

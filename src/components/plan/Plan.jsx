@@ -43,7 +43,7 @@ function Plan(props) {
           </div>
           <p className={!monthly ? "selected" : ""}>Yearly</p>
         </div>
-        <DivBouton etape={props.etape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} />
       </div>
     </>
   );

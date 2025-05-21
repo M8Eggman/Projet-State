@@ -39,7 +39,7 @@ function Add_ons(props) {
             <p>+$20/yr</p>
           </div>
         </div>
-        <DivBouton etape={props.etape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} />
       </div>
     </>
   );

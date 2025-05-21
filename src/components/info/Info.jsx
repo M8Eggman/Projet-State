@@ -49,7 +49,7 @@ function Info(props) {
             )}
           </div>
         </form>
-        <DivBouton etape={props.etape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape}/>
       </div>
     </>
   );
