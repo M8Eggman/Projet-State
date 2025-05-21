@@ -10,7 +10,7 @@ function Info(props) {
   return (
     <>
       <div className="info">
-        <Titre titre={"Personal Info"} paragraphe={"Please provide your name, email address, and phone number."} style={{ marginBottom: "40px" }} />
+        <Titre titre={"Personal Info"} paragraphe={"Please provide your name, email address, and phone number."} />
         <form className="infoForm" action="">
           <label htmlFor="infoName">Your name is: {}</label>
           <div>

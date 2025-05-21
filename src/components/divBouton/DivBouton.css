@@ -33,4 +33,6 @@
 }
 .divBoutonConfirm {
   right: 0;
+  color: white;
+  background-color: var(--Purplish_blue);
 }

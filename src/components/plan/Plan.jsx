@@ -12,7 +12,7 @@ function Plan(props) {
   return (
     <>
       <div className="plan">
-        <Titre titre={"Select your plan"} paragraphe={"You have the option of monthly or yearly billing."} style={{ marginBottom: "40px" }} />
+        <Titre titre={"Select your plan"} paragraphe={"You have the option of monthly or yearly billing."} />
         <div className="planOptions">
           <div className={plan === "arcade" ? "planChoice planChoiceSelected" : "planChoice"}>
             <img src={arcade} alt="" />

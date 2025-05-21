@@ -6,7 +6,7 @@ function Add_ons(props) {
   return (
     <>
       <div className="add-ons">
-        <Titre titre={"Pick add-ons"} paragraphe={"Add-ons help enhance your gaming experience."} style={{ marginBottom: "40px" }} />
+        <Titre titre={"Pick add-ons"} paragraphe={"Add-ons help enhance your gaming experience."}/>
         <div className="add-onsOptions">
           <div className="add-onsChoice">
             <div className="add-onsChoiceJSP">
