@@ -9,12 +9,14 @@ import ThankYou from "./components/thankYou/thankYou";
 
 function App() {
   const [etape, setEtape] = useState(1);
+  const [plan, setPlan] = useState("arcade");
+  const [monthly, setMonthly] = useState(true);
   return (
     <>
       <SideBar etape={etape} />
       <div className="divSteps">
         {etape === 1 && <Info etape={etape} setEtape={setEtape} />}
-        {etape === 2 && <Plan etape={etape} setEtape={setEtape} />}
+        {etape === 2 && <Plan etape={etape} setEtape={setEtape} plan={plan} setPlan={setPlan} monthly={monthly} setMonthly={setMonthly}/>}
         {etape === 3 && <Add_ons etape={etape} setEtape={setEtape} />}
         {etape === 4 && <Summary etape={etape} setEtape={setEtape} />}
         {etape === 5 && <ThankYou etape={etape} setEtape={setEtape} />}

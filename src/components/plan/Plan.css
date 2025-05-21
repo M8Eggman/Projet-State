@@ -19,6 +19,10 @@
   cursor: pointer;
   margin-block: 30px;
 }
+.planChoiceSelected {
+  border: 2px solid #b085b0;
+  box-shadow: #b085b0 0px 0px 2px;
+}
 .planChoice img {
   margin-bottom: 40px;
 }
@@ -41,9 +45,11 @@
 .monthlyYearly p {
   color: var(--Cool_gray);
   font-weight: 600;
+  transition: 250ms;
 }
 .selected {
   color: #244b7e !important;
+  transition: 250ms;
 }
 .switch {
   width: 50px;
@@ -61,4 +67,12 @@
   display: flex;
   background-color: var(--White);
   border-radius: 50%;
+}
+.monthly {
+  transform: translateX(0);
+  transition: 250ms;
+}
+.yearly {
+  transform: translateX(29px);
+  transition: 250ms;
 }
