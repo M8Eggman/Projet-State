@@ -1,11 +1,21 @@
+import Titre from "../titre/Titre";
 import "./ThankYou.css";
+import thankYou from "../../assets/img/thankyou.svg";
 
 function ThankYou() {
   return (
-    <div className="infoTitle">
-      <h1 className="h1Recurent">Personal info</h1>
-      <p className="pRecurent">Please provide your name, email address, and phone number.</p>
-    </div>
+    <>
+      <div className="thankYou">
+        <img src={thankYou} alt="" />
+        <Titre
+          titre={"Thank you!"}
+          paragraphe={
+            "Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."
+          }
+          style={{ marginBottom: "40px" }}
+        />
+      </div>
+    </>
   );
 }
 
