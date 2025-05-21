@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./Info.css";
 import { faChevronDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DivBouton from "../divBouton/divBouton";
 
-function Info() {
+function Info(props) {
   const [focus, setFocus] = useState("");
   return (
     <>
@@ -50,9 +51,7 @@ function Info() {
             )}
           </div>
         </form>
-        <div className="stepBouton">
-          <button className="stepBoutonNext">Next Step</button>
-        </div>
+        <DivBouton etape={props.etape} />
       </div>
     </>
   );

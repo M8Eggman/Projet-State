@@ -7,15 +7,15 @@ import SideBar from "./components/sideBar/SideBar";
 import Summary from "./components/summary/Summary";
 
 function App() {
-  const [etape, setEtape] = useState(1);
+  const [etape, setEtape] = useState(2);
   return (
     <>
       <SideBar etape={etape} />
       <div className="divSteps">
-        {etape === 1 && <Info />}
-        {etape === 2 && <Plan />}
-        {etape === 3 && <Add_ons />}
-        {etape === 4 && <Summary />}
+        {etape === 1 && <Info etape={etape} setEtape={setEtape} />}
+        {etape === 2 && <Plan etape={etape} setEtape={setEtape} />}
+        {etape === 3 && <Add_ons etape={etape} setEtape={setEtape} />}
+        {etape === 4 && <Summary etape={etape} setEtape={setEtape} />}
       </div>
     </>
   );

@@ -1,0 +1,31 @@
+.divBouton {
+  position: absolute;
+  height: 40px;
+  /* tout en bas de la div sans compter le padding */
+  bottom: 20px;
+  /* la largeur de la div moins son paddingX */
+  width: calc(100% - 160px);
+}
+.divBouton button {
+  position: absolute;
+  height: 40px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.divBoutonBack {
+  left: 0;
+  background: none;
+  color: var(--Marine_blue);
+}
+.divBoutonNext {
+  right: 0;
+  background-color: var(--Marine_blue);
+  color: white;
+}
+.divBoutonConfirm {
+  right: 0;
+}
