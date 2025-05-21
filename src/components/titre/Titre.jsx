@@ -1,4 +1,4 @@
-import React from "react";
+import "./Titre.css"
 
 function Titre(props) {
   return (

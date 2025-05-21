@@ -5,3 +5,60 @@
   box-sizing: border-box;
   position: relative;
 }
+.planOptions {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.planChoice {
+  flex: 1;
+  border: 2px solid var(--Light_gray);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-block: 30px;
+}
+.planChoice img {
+  margin-bottom: 40px;
+}
+.planChoiceTitle h4 {
+  margin: 0;
+  font-size: 17px;
+  color: #244b7e;
+}
+.planChoiceTitle p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--Cool_gray);
+}
+.monthlyYearly {
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.monthlyYearly p {
+  color: var(--Cool_gray);
+  font-weight: 600;
+}
+.selected {
+  color: #244b7e !important;
+}
+.switch {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--Marine_blue);
+  border-radius: 20px;
+  padding: 3px;
+  cursor: pointer;
+}
+.slider {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: var(--White);
+  border-radius: 50%;
+}
