@@ -22,6 +22,13 @@
 .planChoiceSelected {
   border: 2px solid #b085b0;
   box-shadow: #b085b0 0px 0px 2px;
+  background-color: var(--Light_gray);
+  transition: 200ms;
+}
+.planChoice:hover {
+  border: 2px solid #b085b0;
+  box-shadow: #b085b0 0px 0px 2px;
+  transition: 200ms;
 }
 .planChoice img {
   margin-bottom: 40px;
@@ -29,7 +36,7 @@
 .planChoiceTitle h4 {
   margin: 0;
   font-size: 17px;
-  color: #244b7e;
+  color: var(--Blue);
 }
 .planChoiceTitle p {
   margin: 0;
@@ -48,7 +55,7 @@
   transition: 250ms;
 }
 .selected {
-  color: #244b7e !important;
+  color: var(--Blue) !important;
   transition: 250ms;
 }
 .switch {

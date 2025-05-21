@@ -12,9 +12,9 @@ function Plan(props) {
         <Titre titre={"Select your plan"} paragraphe={"You have the option of monthly or yearly billing."} />
         <div className="planOptions">
           <div
-            className={props.plan === "arcade" ? "planChoice planChoiceSelected" : "planChoice"}
+            className={props.plan === "Arcade" ? "planChoice planChoiceSelected" : "planChoice"}
             onClick={() => {
-              props.setPlan("arcade");
+              props.setPlan("Arcade");
             }}>
             <img src={arcade} alt="" />
             <div className="planChoiceTitle">
@@ -23,9 +23,9 @@ function Plan(props) {
             </div>
           </div>
           <div
-            className={props.plan === "advanced" ? "planChoice planChoiceSelected" : "planChoice"}
+            className={props.plan === "Advanced" ? "planChoice planChoiceSelected" : "planChoice"}
             onClick={() => {
-              props.setPlan("advanced");
+              props.setPlan("Advanced");
             }}>
             <img src={advanced} alt="" />
             <div className="planChoiceTitle">
@@ -34,9 +34,9 @@ function Plan(props) {
             </div>
           </div>
           <div
-            className={props.plan === "pro" ? "planChoice planChoiceSelected" : "planChoice"}
+            className={props.plan === "Pro" ? "planChoice planChoiceSelected" : "planChoice"}
             onClick={() => {
-              props.setPlan("pro");
+              props.setPlan("Pro");
             }}>
             <img src={pro} alt="" />
             <div className="planChoiceTitle">

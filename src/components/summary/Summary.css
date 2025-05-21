@@ -5,3 +5,45 @@
   box-sizing: border-box;
   position: relative;
 }
+.summaryChoice {
+  background-color: var(--Magnolia);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.summaryPlan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summaryPlan p {
+  font-size: 17px;
+  font-weight: 600;
+  color: var();
+}
+.summaryPlanTitle h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.summaryPlanTitle p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--Cool_gray);
+}
+.summaryAdd-ons > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+.summaryTotal p:first-of-type {
+}
+.summaryTotal p:last-of-type {
+  color: var(--Purplish_blue);
+}

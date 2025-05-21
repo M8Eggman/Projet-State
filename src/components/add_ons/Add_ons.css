@@ -27,6 +27,12 @@
   box-shadow: #b085b0 0px 0px 2px;
   transition: 200ms;
 }
+.add-onsChoiceSelected {
+  border: 2px solid #b085b0;
+  box-shadow: #b085b0 0px 0px 2px;
+  background-color: var(--Light_gray);
+  transition: 200ms;
+}
 .add-onsChoiceJSP {
   display: flex;
   gap: 10px;
@@ -34,11 +40,12 @@
 .add-onsChoiceJSP input {
   accent-color: #b085b0;
   width: 14px;
+  pointer-events: none;
 }
 .add-onsChoiceDescription h4 {
   margin: 0;
   font-size: 17px;
-  color: #244b7e;
+  color: var(--Blue);
 }
 .add-onsChoiceDescription p {
   margin: 0;
