@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root {
   --Marine_blue: hsl(213, 96%, 18%);
-  --Blue: #0d3670;
+  --Blue: hsl(216, 57%, 31%);
   --Purplish_blue: hsl(243, 100%, 62%);
   --Pastel_blue: hsl(228, 100%, 84%);
   --Light_blue: hsl(206, 94%, 87%);

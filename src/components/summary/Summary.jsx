@@ -15,7 +15,7 @@ function Summary(props) {
               <h4>
                 {props.plan}({props.monthly ? "Monthly" : "Yearly"})
               </h4>
-              <p>Change</p>
+              <button onClick={()=>props.setEtape(2)}>Change</button>
             </div>
             <p>
               ${plans[props.plan][props.monthly ? "monthly" : "yearly"]}/{props.monthly ? "mo" : "yr"}
