@@ -30,6 +30,42 @@ body {
 }
 .divSteps {
   width: 600px;
-  padding: 20px;
   box-sizing: border-box;
+}
+.h1Recurent {
+  color: var(--Marine_blue);
+  margin-bottom: 0;
+}
+.pRecurent {
+  color: var(--Cool_gray);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.stepBouton {
+  position: absolute;
+  bottom: 20px;
+  height: 40px;
+  width: calc(100% - 100px);
+}
+.stepBouton button {
+  position: absolute;
+  height: 40px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.stepBoutonBack {
+  left: 0;
+}
+.stepBoutonNext {
+  right: 0;
+  background-color: var(--Marine_blue);
+  color: white;
+}
+.stepBoutonConfirm {
+  right: 0;
 }

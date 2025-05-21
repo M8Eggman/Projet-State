@@ -1,0 +1,73 @@
+/* source: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  position: relative;
+}
+.infoTitle {
+  margin-bottom: 40px;
+}
+.infoForm {
+  display: flex;
+  flex-direction: column;
+}
+.infoForm label {
+  margin-bottom: 5px;
+  color: var(--Marine_blue);
+  font-weight: 500;
+}
+.infoForm > div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.infoForm input {
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--Light_gray);
+  padding-inline: 20px 60px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.infoForm input:focus {
+  border: 2px solid #b085b0;
+  box-shadow: #b085b0 0px 0px 2px;
+  outline: none;
+}
+.infoForm input::placeholder {
+  color: var(--Cool_gray);
+}
+.inputIcon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: absolute;
+  font-size: 13px;
+  bottom: 17px;
+  right: 10px;
+}
+.userIcon {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+  border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

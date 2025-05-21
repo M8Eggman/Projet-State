@@ -28,14 +28,14 @@
 .stepNombreChoisi {
   background-color: var(--Light_blue);
 }
-.stepNombreChoisi p {
-  color: var(--Black) !important;
-}
 .stepNombre p {
   margin: 0;
-  color: var(--White);
   font-size: 20px;
   font-weight: 600;
+  color: var(--White);
+}
+.stepNombreChoisi p {
+  color: var(--Black) !important;
 }
 .stepNom {
   display: flex;
