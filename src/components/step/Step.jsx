@@ -1,7 +1,11 @@
 import "./Step.css";
 
 function Step() {
-  return <></>;
+  return (
+    <>
+      <div className="sideBar"></div>
+    </>
+  );
 }
 
 export default Step;
