@@ -8,6 +8,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .info {
@@ -16,9 +17,6 @@ input[type="number"] {
   padding: 20px 80px;
   box-sizing: border-box;
   position: relative;
-}
-.infoTitle {
-  margin-bottom: 40px;
 }
 .infoForm {
   display: flex;

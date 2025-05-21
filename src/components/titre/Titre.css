@@ -1,0 +1,10 @@
+.h1Recurent {
+  color: var(--Marine_blue);
+  margin-bottom: 0;
+}
+.pRecurent {
+  color: var(--Cool_gray);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}

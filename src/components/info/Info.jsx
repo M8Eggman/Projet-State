@@ -3,16 +3,14 @@ import "./Info.css";
 import { faChevronDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DivBouton from "../divBouton/divBouton";
+import Titre from "../titre/Titre";
 
 function Info(props) {
   const [focus, setFocus] = useState("");
   return (
     <>
       <div className="info">
-        <div className="infoTitle">
-          <h1 className="h1Recurent">Personal info</h1>
-          <p className="pRecurent">Please provide your name, email address, and phone number.</p>
-        </div>
+        <Titre titre={"Personal Info"} paragraphe={"Please provide your name, email address, and phone number."} style={{ marginBottom: "40px" }} />
         <form className="infoForm" action="">
           <label htmlFor="infoName">Your name is: {}</label>
           <div>
