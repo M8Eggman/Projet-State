@@ -1,0 +1,57 @@
+.sideBar {
+  position: relative;
+  background-image: url("../../assets/img/sidebar.svg");
+  background-size: cover;
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.stepNombre {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+}
+.stepNombreChoisi {
+  background-color: var(--Light_blue);
+}
+.stepNombreChoisi p {
+  color: var(--Black) !important;
+}
+.stepNombre p {
+  margin: 0;
+  color: var(--White);
+  font-size: 20px;
+  font-weight: 600;
+}
+.stepNom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stepNom p {
+  margin: 0;
+}
+.stepNom p:first-of-type {
+  color: var(--Pastel_blue);
+  font-size: 14px;
+  font-weight: 500;
+}
+.stepNom p:last-of-type {
+  color: var(--White);
+  font-size: 16px;
+  font-weight: 500;
+}
