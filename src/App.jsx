@@ -14,14 +14,27 @@ function App() {
   const [online, setOnline] = useState(false);
   const [storage, setStorage] = useState(false);
   const [profile, setProfile] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   return (
     <>
       <SideBar etape={etape} />
       <div className="divSteps">
-        {etape === 1 && <Info etape={etape} setEtape={setEtape} />}
+        {etape === 1 && <Info etape={etape} setEtape={setEtape} name={name} setName={setName} email={email} setEmail={setEmail} phone={phone} setPhone={setPhone} />}
         {etape === 2 && <Plan etape={etape} setEtape={setEtape} plan={plan} setPlan={setPlan} monthly={monthly} setMonthly={setMonthly} />}
         {etape === 3 && (
-          <Add_ons etape={etape} setEtape={setEtape} monthly={monthly} online={online} setOnline={setOnline} storage={storage} setStorage={setStorage} profile={profile} setProfile={setProfile} />
+          <Add_ons
+            etape={etape}
+            setEtape={setEtape}
+            monthly={monthly}
+            online={online}
+            setOnline={setOnline}
+            storage={storage}
+            setStorage={setStorage}
+            profile={profile}
+            setProfile={setProfile}
+          />
         )}
         {etape === 4 && <Summary etape={etape} setEtape={setEtape} plan={plan} monthly={monthly} online={online} storage={storage} profile={profile} />}
         {etape === 5 && <ThankYou />}

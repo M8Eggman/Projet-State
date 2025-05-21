@@ -7,25 +7,24 @@ import Titre from "../titre/Titre";
 
 function Info(props) {
   const [focus, setFocus] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+
   return (
     <>
       <div className="info">
         <Titre titre={"Personal Info"} paragraphe={"Please provide your name, email address, and phone number."} />
         <form className="infoForm" action="">
-          <label htmlFor="infoName">Your name is: {name}</label>
+          <label htmlFor="infoName">Your name is: {props.name}</label>
           <div>
             <input
               type="text"
               name=""
               id="infoName"
               placeholder="Vingt-Six"
+              defaultValue={props.name}
               onFocus={() => setFocus("infoName")}
               onBlur={() => setFocus("")}
               onChange={(e) => {
-                setName(e.target.value);
+                props.setName(e.target.value);
               }}
             />
             {focus === "infoName" && (
@@ -37,17 +36,18 @@ function Info(props) {
               </div>
             )}
           </div>
-          <label htmlFor="infoEmail">Your email is: {email}</label>
+          <label htmlFor="infoEmail">Your email is: {props.email}</label>
           <div>
             <input
               type="text"
               name=""
               id="infoEmail"
               placeholder="vingt_six@email.com"
+              defaultValue={props.email}
               onFocus={() => setFocus("infoEmail")}
               onBlur={() => setFocus("")}
               onChange={(e) => {
-                setEmail(e.target.value);
+                props.setEmail(e.target.value);
               }}
             />
             {focus === "infoEmail" && (
@@ -59,7 +59,7 @@ function Info(props) {
               </div>
             )}
           </div>
-          <label htmlFor="infoPhone">Your phone number is: {phone}</label>
+          <label htmlFor="infoPhone">Your phone number is: {props.phone}</label>
           <div>
             <input
               type="number"
@@ -67,10 +67,11 @@ function Info(props) {
               id="infoPhone"
               min={0}
               placeholder="e.g.+1 234 567 890"
+              defaultValue={props.phone}
               onFocus={() => setFocus("infoPhone")}
               onBlur={() => setFocus("")}
               onChange={(e) => {
-                setPhone(e.target.value);
+                props.setPhone(e.target.value);
               }}
             />
             {focus === "infoPhone" && (
