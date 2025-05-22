@@ -8,3 +8,8 @@
   font-weight: 500;
   margin-top: 10px;
 }
+@media screen and (max-width: 768px) {
+  .h1Recurent {
+    margin: 0;
+  }
+}

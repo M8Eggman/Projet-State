@@ -48,6 +48,6 @@
   /* tout en bas de la div sans compter le padding */
   bottom: 20px;
   /* la largeur de la div moins son paddingX */
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
 }
 }

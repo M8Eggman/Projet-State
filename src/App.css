@@ -29,6 +29,7 @@ body {
   padding: 20px;
   border-radius: 30px;
   display: flex;
+  box-sizing: border-box;
 }
 .divSteps {
   width: 600px;
@@ -43,9 +44,27 @@ body {
   #root {
     display: flex;
     flex-direction: column;
+    height: 100dvh;
   }
   .divSteps {
     width: 90vw;
-    height: 600px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    align-items: initial;
+  }
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0px;
+    height: 100dvh;
+    border-radius: 0px;
+  }
+  .divSteps {
+    width: 100vw;
   }
 }

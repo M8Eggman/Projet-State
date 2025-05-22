@@ -89,11 +89,22 @@
   }
   .step {
     flex: 1;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sideBar {
+    padding: 20px 10px;
+    gap: 0px;
   }
 }
 @media screen and (max-width: 375px) {
-  .step {
-    flex: initial;
-    width: 80vw;
+  .sideBar {
+    padding: 20px 10px;
+    gap: 10px;
+    width: 100vw;
+    border-radius: 0px;
   }
 }
