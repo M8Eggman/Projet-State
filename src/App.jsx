@@ -9,7 +9,7 @@ import ThankYou from "./components/thankYou/thankYou";
 
 function App() {
   const [etape, setEtape] = useState(1);
-  const [plan, setPlan] = useState("Arcade");
+  const [plan, setPlan] = useState("");
   const [monthly, setMonthly] = useState(true);
   const [online, setOnline] = useState(false);
   const [storage, setStorage] = useState(false);

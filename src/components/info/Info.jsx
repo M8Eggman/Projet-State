@@ -7,7 +7,15 @@ import Titre from "../titre/Titre";
 
 function Info(props) {
   const [focus, setFocus] = useState("");
-
+  const [valide, setValide] = useState(false);
+  // check si le form est rempli
+  function handleValide(name, email, phone) {
+    if (name.trim() !== "" && email.trim() !== "" && phone.trim() !== "") {
+      setValide(true);
+    } else {
+      setValide(false);
+    }
+  }
   return (
     <>
       <div className="info">
@@ -25,6 +33,7 @@ function Info(props) {
               onBlur={() => setFocus("")}
               onChange={(e) => {
                 props.setName(e.target.value);
+                handleValide(e.target.value, props.email, props.phone);
               }}
             />
             {focus === "infoName" && (
@@ -48,6 +57,7 @@ function Info(props) {
               onBlur={() => setFocus("")}
               onChange={(e) => {
                 props.setEmail(e.target.value);
+                handleValide(props.name, e.target.value, props.phone);
               }}
             />
             {focus === "infoEmail" && (
@@ -72,6 +82,7 @@ function Info(props) {
               onBlur={() => setFocus("")}
               onChange={(e) => {
                 props.setPhone(e.target.value);
+                handleValide(props.name, props.email, e.target.value);
               }}
             />
             {focus === "infoPhone" && (
@@ -84,7 +95,7 @@ function Info(props) {
             )}
           </div>
         </form>
-        <DivBouton etape={props.etape} setEtape={props.setEtape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={valide} />
       </div>
     </>
   );

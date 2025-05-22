@@ -14,7 +14,7 @@ function DivBouton(props) {
             Confirm
           </button>
         ) : (
-          <button className="divBoutonNext" onClick={() => props.setEtape(props.etape + 1)}>
+          <button className="divBoutonNext" disabled={!props.valide} onClick={() => props.setEtape(props.etape + 1)}>
             Next Step
           </button>
         )}

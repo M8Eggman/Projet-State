@@ -39,7 +39,7 @@ function Add_ons(props) {
             <p>{props.monthly ? "+$2/mo" : "+$20/yr"}</p>
           </div>
         </div>
-        <DivBouton etape={props.etape} setEtape={props.setEtape} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={true}/>
       </div>
     </>
   );
