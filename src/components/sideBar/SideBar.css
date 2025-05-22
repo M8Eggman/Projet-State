@@ -97,12 +97,6 @@
 @media screen and (max-width: 576px) {
   .sideBar {
     padding: 20px 10px;
-    gap: 0px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .sideBar {
-    padding: 20px 10px;
     gap: 10px;
     width: 100vw;
     border-radius: 0px;
