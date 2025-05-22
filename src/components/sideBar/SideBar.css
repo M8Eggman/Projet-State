@@ -17,6 +17,14 @@
   gap: 20px;
   cursor: pointer;
 }
+.step:hover .stepNombre {
+  background-color: var(--Light_blue);
+  transition: 250ms;
+}
+.step:hover .stepNombre p {
+  color: var(--Black) !important;
+  transition: 250ms;
+}
 .stepDisabled {
   cursor: not-allowed;
   pointer-events: none;
@@ -29,18 +37,22 @@
   align-items: center;
   border-radius: 50%;
   border: 2px solid var(--White);
+  transition: 250ms;
 }
 .stepNombreChoisi {
   background-color: var(--Light_blue);
+  transition: 250ms;
 }
 .stepNombre p {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
   color: var(--White);
+  transition: 250ms;
 }
 .stepNombreChoisi p {
   color: var(--Black) !important;
+  transition: 250ms;
 }
 .stepNom {
   display: flex;
