@@ -81,7 +81,7 @@ function Info(props) {
               onFocus={() => setFocus("infoPhone")}
               onBlur={() => setFocus("")}
               onKeyDown={(e) => {
-                if (e.key === "e" || e.key === "E" || e.key === "-" || e.key === "+") {
+                if (e.key === "e" || e.key === "E" || e.key === "-") {
                   e.preventDefault();
                 }
               }}
