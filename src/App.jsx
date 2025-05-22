@@ -17,12 +17,29 @@ function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [valideInfo, setValideInfo] = useState(false);
+  const [validePlan, setValidePlan] = useState(false);
   return (
     <>
-      <SideBar etape={etape} />
+      <SideBar etape={etape} setEtape={setEtape} valideInfo={valideInfo} validePlan={validePlan} />
       <div className="divSteps">
-        {etape === 1 && <Info etape={etape} setEtape={setEtape} name={name} setName={setName} email={email} setEmail={setEmail} phone={phone} setPhone={setPhone} />}
-        {etape === 2 && <Plan etape={etape} setEtape={setEtape} plan={plan} setPlan={setPlan} monthly={monthly} setMonthly={setMonthly} />}
+        {etape === 1 && (
+          <Info
+            etape={etape}
+            setEtape={setEtape}
+            name={name}
+            setName={setName}
+            email={email}
+            setEmail={setEmail}
+            phone={phone}
+            setPhone={setPhone}
+            valideInfo={valideInfo}
+            setValideInfo={setValideInfo}
+          />
+        )}
+        {etape === 2 && (
+          <Plan etape={etape} setEtape={setEtape} plan={plan} setPlan={setPlan} monthly={monthly} setMonthly={setMonthly} validePlan={validePlan} setValidePlan={setValidePlan} />
+        )}
         {etape === 3 && (
           <Add_ons
             etape={etape}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Info.css";
 import { faChevronDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,17 +6,16 @@ import DivBouton from "../divBouton/divBouton";
 import Titre from "../titre/Titre";
 
 function Info(props) {
+  // variable qui retient quel input est en mode focus
   const [focus, setFocus] = useState("");
-  const [valide, setValide] = useState(false);
   // check si le form est rempli
   function handleValide(name, email, phone) {
     if (name.trim() !== "" && email.trim() !== "" && phone.trim() !== "") {
-      setValide(true);
+      props.setValideInfo(true);
     } else {
-      setValide(false);
+      props.setValideInfo(false);
     }
   }
-  useEffect(() => handleValide(props.name, props.email, props.phone));
   return (
     <>
       <div className="info">
@@ -96,7 +95,7 @@ function Info(props) {
             )}
           </div>
         </form>
-        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={valide} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={props.valideInfo} />
       </div>
     </>
   );

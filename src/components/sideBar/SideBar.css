@@ -15,6 +15,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
+}
+.stepDisabled {
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .stepNombre {
   min-width: 40px;

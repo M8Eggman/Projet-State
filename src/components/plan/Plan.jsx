@@ -4,19 +4,16 @@ import arcade from "../../assets/img/arcade.svg";
 import pro from "../../assets/img/pro.svg";
 import DivBouton from "../divBouton/divBouton";
 import Titre from "../titre/Titre";
-import { useEffect, useState } from "react";
 
 function Plan(props) {
-  const [valide, setValide] = useState(false);
-  // check si le form est rempli
+  // check si un plan est sélectionner
   function handleValide(plan) {
     if (plan.trim() !== "") {
-      setValide(true);
+      props.setValidePlan(true);
     } else {
-      setValide(false);
+      props.setValidePlan(false);
     }
   }
-  useEffect(() => handleValide(props.plan));
   return (
     <>
       <div className="plan">
@@ -70,7 +67,7 @@ function Plan(props) {
           </div>
           <p className={!props.monthly ? "selected" : ""}>Yearly</p>
         </div>
-        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={valide} />
+        <DivBouton etape={props.etape} setEtape={props.setEtape} valide={props.validePlan} />
       </div>
     </>
   );
