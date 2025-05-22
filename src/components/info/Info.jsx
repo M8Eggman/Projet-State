@@ -80,6 +80,11 @@ function Info(props) {
               defaultValue={props.phone}
               onFocus={() => setFocus("infoPhone")}
               onBlur={() => setFocus("")}
+              onKeyDown={(e) => {
+                if (e.key === "e" || e.key === "E" || e.key === "-" || e.key === "+") {
+                  e.preventDefault();
+                }
+              }}
               onChange={(e) => {
                 props.setPhone(e.target.value);
                 handleValide(props.name, props.email, e.target.value);
