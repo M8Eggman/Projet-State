@@ -9,3 +9,8 @@
   padding: 20px 80px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 576px) {
+  .thankYou {
+    padding: 20px 10px;
+  }
+}

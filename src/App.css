@@ -18,7 +18,8 @@ body {
   padding: 0;
   background-color: var(--Magnolia);
   font-family: "Ubuntu", sans-serif;
-  height: 100dvh;
+  /* dvh s'adapte a la barre des navigation des mobiles */
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,4 +33,19 @@ body {
 .divSteps {
   width: 600px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 992px) {
+  .divSteps {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+  .divSteps {
+    width: 90vw;
+    height: 600px;
+  }
 }

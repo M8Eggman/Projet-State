@@ -70,3 +70,8 @@ input[type="number"] {
   justify-content: center;
   align-items: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .info {
+    padding: 20px 10px;
+  }
+}

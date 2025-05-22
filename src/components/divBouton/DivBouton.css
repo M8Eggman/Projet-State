@@ -41,3 +41,13 @@
   color: white;
   background-color: var(--Purplish_blue);
 }
+@media screen and (max-width: 768px) {
+.divBouton {
+  position: absolute;
+  height: 40px;
+  /* tout en bas de la div sans compter le padding */
+  bottom: 20px;
+  /* la largeur de la div moins son paddingX */
+  width: calc(100% - 10px);
+}
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Info.css";
 import { faChevronDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +16,7 @@ function Info(props) {
       setValide(false);
     }
   }
+  useEffect(() => handleValide(props.name, props.email, props.phone));
   return (
     <>
       <div className="info">

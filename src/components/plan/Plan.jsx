@@ -4,7 +4,7 @@ import arcade from "../../assets/img/arcade.svg";
 import pro from "../../assets/img/pro.svg";
 import DivBouton from "../divBouton/divBouton";
 import Titre from "../titre/Titre";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Plan(props) {
   const [valide, setValide] = useState(false);
@@ -16,6 +16,7 @@ function Plan(props) {
       setValide(false);
     }
   }
+  useEffect(() => handleValide(props.plan));
   return (
     <>
       <div className="plan">

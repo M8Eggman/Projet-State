@@ -74,3 +74,8 @@
   font-weight: 600;
   color: var(--Purplish_blue);
 }
+@media screen and (max-width: 768px) {
+  .summary {
+    padding: 20px 10px;
+  }
+}

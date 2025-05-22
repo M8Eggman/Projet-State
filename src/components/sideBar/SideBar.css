@@ -17,8 +17,8 @@
   gap: 20px;
 }
 .stepNombre {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,4 +54,29 @@
   color: var(--White);
   font-size: 16px;
   font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+  .sideBar {
+    width: 250px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sideBar {
+    width: 90vw;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-position: bottom;
+  }
+  .step {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 375px) {
+  .step {
+    flex: initial;
+    width: 80vw;
+  }
 }

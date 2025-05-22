@@ -58,3 +58,8 @@
   font-weight: 500;
   color: var(--Cool_gray);
 }
+@media screen and (max-width: 768px) {
+  .add-ons {
+    padding: 20px 10px;
+  }
+}
